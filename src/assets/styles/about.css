@@ -1,0 +1,214 @@
+.about_hero {
+  background: linear-gradient(to left, rgb(198, 53, 255), rgb(92, 156, 253));
+  min-height: 90vh;
+}
+
+body .about_hero h1 {
+  letter-spacing: 0.2vw;
+  font-size: 3rem;
+}
+
+body .about_hero p {
+  font-size: 1.5rem;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-family: Bahnschrift;
+}
+
+body .about_hero .logo_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  min-width: 23%;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 5rem;
+  color: rgb(119, 0, 255);
+}
+
+body .about_hero .logo_container h2 {
+  font-family: Bahnschrift;
+  font-size: 1.5rem;
+}
+
+body .about_hero .logo_container img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* .about_container has started */
+
+.about_container {
+  width: 100%;
+  min-height: 90vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about_container .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 550px;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  background: rgb(106, 0, 255);
+  color: white;
+  padding: 0.7rem;
+  font-family: Bahnschrift;
+  letter-spacing: 0.2vw;
+  border-top-right-radius: 3vw;
+  border-bottom-right-radius: 3vw;
+  border-top-left-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  width: 100%;
+}
+.about_container .details p {
+  color: var(--black-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.about_container .details h2 {
+  color: rgb(106, 0, 255);
+  font-weight: 450;
+  letter-spacing: 0.2vw;
+  font-size: 1rem;
+}
+
+.about_container .details .courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.about_container .details .courses .c_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.about_container .details .courses .c_box > span {
+  width: 200px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1vw;
+  color: var(--black-color);
+}
+
+.about_container .details .courses .c_box div {
+  padding: 0.2rem;
+  background: #7814fc;
+  border-radius: 3vw;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.about_container .details .courses .c_box div .span {
+  background: rgb(209, 141, 255);
+  border-radius: 3vw;
+  width: 70%;
+  padding: 0.5rem;
+}
+
+.about_container .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  border-radius: 2vw;
+  color: var(--black-color);
+  box-shadow: 0.1vw 1vw 3vw rgba(0, 0, 0, 0.144);
+  gap: 0.5rem;
+  width: 400px;
+  height: 460px;
+}
+
+.about_container .img .img_box {
+  background: url("../src/assets/Img/Png/About_Profile_image.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 1vw;
+}
+
+.about_container .img .media_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.about_container .img .media_container a img {
+  width: 3vw;
+  border-radius: 50%;
+}
+
+/* .about_section has started */
+
+.about_section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 30vh;
+  width: 86%;
+}
+
+pre {
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-size: 1.1rem;
+  text-wrap: wrap;
+  color: var(--black-color);
+}
+
+/* about_shop .about_section has started */
+
+.about_shop {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_shop pre .about_shop_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+/* media query for about home .about_section */
+@media screen and (max-width: 500px) {
+  .about_container .details .courses .c_box div {
+    width: 100%;
+  }
+  body aside .logo_container {
+    width: 100%;
+    border-radius: 0rem;
+  }
+  .about_container .img .img_box {
+    width: 250px;
+    height: 250px;
+  }
+}

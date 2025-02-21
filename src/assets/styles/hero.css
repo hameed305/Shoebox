@@ -1,0 +1,121 @@
+
+
+/* responsivness styling */
+
+
+
+@media screen and (max-width:990px){
+    main article .article_card{
+        width:100%;
+    }
+    body .footer_card{
+        flex-direction:column;
+        text-align:center;
+        gap:0;
+        padding:0.5rem;
+    }
+    body .footer_card img{
+        width:250px;
+    }
+    body .footer_card .footer_card_box{
+        width:100%;
+        padding:0;
+        min-height:0;
+    }
+}
+
+@media screen and (max-width:850px){
+    body .home .home-text{
+        width:100%;
+        text-align:center;
+    }
+    body .home .btn_box{
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    body .home img{
+        width:400px;
+    }
+    body .promise_section .promise_box img{
+        width:400px;
+    }
+    main article .article_img img{
+        width:350px;
+    }
+    aside img{
+        width:80vw;
+    }
+    body .footer_card img{
+        width:35vw;
+    }
+}
+@media screen and (max-width:450px){
+    body .home img{
+        width:80vw;
+    }
+    body .promise_section .promise_box img{
+        width:80vw;
+    }
+    .hero_2 h1{
+        font-size:2rem;
+        width:80%;
+    }
+    main article .article_img img{
+        width:80vw;
+    }
+    main article{
+        min-height:70vh;
+    }
+    main article .article_card{
+        font-size:0.8rem;
+        gap:1rem;
+        height:300px;
+    }
+    main article .article_card a{
+        border-radius:8vw;
+        padding:0.5rem;
+    }
+    aside .aside-box{
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        text-align:center;
+        padding:0rem;
+        min-height:300px;
+    }   
+    body #colored_title{
+        font-size:3rem;
+        margin-left:0rem;
+    }
+    aside a{
+        width:100%;
+    }
+    body .footer_card{
+        width:70vw;
+        left:15%;
+        bottom: 98%;
+    }
+
+    main .blogger .first_blog_box{
+        width:100%;
+        padding:0 1rem;
+        font-size:0.7rem;
+        align-items:center;
+        text-align:center;
+        justify-content:center;
+        min-height:50vh;
+    }
+    main .blogger a{
+        border-radius:6vw;
+        padding:0.5rem;
+        font-size:0.7rem;
+    }
+    main .blogger .second_blog_box .blog_box{
+        font-size:0.5rem;
+    }
+
+}

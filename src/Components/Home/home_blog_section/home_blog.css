@@ -1,0 +1,104 @@
+
+
+main .blogger{
+    padding:0.5rem;
+    min-height:100vh;
+    margin-bottom:5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    color:white;
+    letter-spacing:0.2vw;
+    gap:1rem;
+}
+main .blogger h1,
+main .blogger p{
+    background:rgba(0, 0, 0, 0.662);
+    padding:0.3rem;
+    border-radius:0.4rem;
+}
+main .blogger a{
+    color:white;
+    text-decoration:none;
+    padding:0.7rem;
+    border-radius:5vw;
+    background:rgba(0, 0, 0, 0.662);
+    font-weight:600;
+    border:0.2vw solid transparent;
+    margin-top:1rem;
+}
+main .blogger a:hover{
+    background: rgba(255, 255, 255, 0.491);
+    border:0.2vw solid white;
+    color:black;
+}
+
+main .blogger  .first_blog_box{
+    background:url("src/assets/Img/Blog/latest_blog_1.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:550px;
+    min-height:80vh;
+    border-radius:2vw;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    padding:0rem 2rem;
+    gap:0.5rem;
+    overflow:hidden;
+}
+main .blogger .second_blog_box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:1rem;
+    width:500px;
+    min-height:80vh;
+}
+
+main .blogger .second_blog_box .blog_box_1{
+    min-height:39vh;
+    width:100%;
+    padding:0.5rem;
+    font-size:0.8rem;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    background:url("src/assets/Img/Blog/latest_blog_2.jpeg");
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:2vw;
+    gap:0.4rem;
+}
+main .blogger .second_blog_box .blog_box_2{
+    min-height:39vh;
+    width:100%;
+    padding:0.5rem;
+    font-size:0.8rem;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    background:url("src/assets/Img/Blog/latest_blog_3.jpg");
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:2vw;
+    gap:0.4rem;
+}
+
+
+
+@media screen and (max-width:1279px){
+    main .blogger .first_blog_box{
+        width:100%;
+    }
+    main .blogger .second_blog_box{
+        width:100%;
+    }
+}

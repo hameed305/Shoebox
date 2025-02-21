@@ -1,0 +1,257 @@
+body header{
+    position: sticky;
+    top: 0px;
+    z-index:9999;
+}
+
+body header nav {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1em;
+    background:var(--nav-color);
+    padding:0.2rem;
+    backdrop-filter:blur(1.5vw);
+}
+
+
+header nav ul {
+    position: relative;
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+header nav,
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0em 0.5rem;
+    letter-spacing: 0.2vw;
+    position:relative;
+}
+
+header nav ul li a {
+    color: var(--black-color);
+    text-decoration: none;
+    position: relative;
+    font-size:0.8em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem;
+    transition:0.1s linear;
+    border-radius:0.4vw;
+    border:0.1vw solid transparent;
+}
+
+header nav ul li a:hover {
+    color:white;
+    background:var(--navbar-link);
+    box-shadow:0vw 0.6vw 1vw rgba(0, 0, 0, 0.139);
+    border:0.1vw solid rgba(255, 255, 255, 0.39);
+}
+.navbar_active{
+    color:white;
+    background:var(--navbar-link);
+    border:0.1vw solid rgba(255, 255, 255, 0.39);
+}
+header nav ul li p {
+    color: var(--black-color);
+    font-size:0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+}
+/* home and contact icon property */
+
+header nav span{
+font-size:1rem;
+cursor: pointer;
+color:var(--black-color);
+padding:0.1vw 0.5rem;
+border-radius:0.2vw;
+display:flex;
+align-items:center;
+padding:0.4rem;
+justify-content:center;
+}
+header nav span:hover{
+        background:var(--light-them);
+        box-shadow:0vw 0.6vw 1vw rgba(0, 0, 0, 0.155);
+        color:white;
+}
+header nav .bi-sun-fill:hover{
+transform:rotate(360deg);
+transition:transform 1s linear;
+}
+
+/* this is dropdown icon on nav a list */
+
+.bi-chevron-down{
+    font-size:1.3em;
+    margin-left:0.1rem;
+}
+
+/* navbar dropdown */
+
+header nav .drop {
+    display: none;
+}
+
+header nav .drop li {
+    margin: 0.6em 0px;
+}
+
+header nav ul li .second-drop {
+    display: flex;
+    flex-direction:column;
+    background: var(--background);
+    position: absolute;
+    width:100%;
+    justify-content:center;
+    align-items:flex-start;
+    border-bottom-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    padding: 1em;
+    top:calc(3rem - 0.5vw);
+    animation: droper 1s;
+    border-bottom:5px solid var(--black-color);
+}
+
+@keyframes droper {
+    0% {
+        opacity: .99999;
+        transform: rotateX(90deg);
+    }
+
+    30% {
+        transform: rotateX(-20deg) rotateY(5deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        transform: rotateX(20deg) rotateY(-3deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: rotateX(0);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+
+/* navbar logo */
+
+
+header .logo{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:15%;
+}
+header .links {
+    width:15%;
+    padding-right:1rem;
+    display: flex;  
+    align-content:center;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+header .logo #logo{
+    width:60.5px;
+    cursor: pointer;
+    margin-left:1.2rem;
+}
+
+
+
+/* mobile menubar */
+
+.mobile_menu_box{
+        width:35px;
+        height:35px;
+        border-radius:0.3rem;
+        background:rgb(128, 24, 255);
+        display:none;
+        align-items:center;
+        justify-content:center;
+        cursor:pointer;
+        color:white;
+        font-size:1.4rem;
+}
+
+/* toggle class of js to show the toggle button*/
+
+.show_mobilemenu {
+    display: block;
+}
+
+
+/* Responsive styling codes for the mobile menu navbar */
+
+@media screen and (max-width:1024px){
+.mobile_menu_box{
+    display:flex;
+}
+    #logo{
+        display:none;
+    }
+
+    body header{
+        padding:1em;
+        position: static;
+    }
+
+    body header nav{
+        margin:0.5rem 0vw;
+        display: none;
+        background:rgb(128, 24, 255);
+        z-index: 1;
+        width:100%;
+        box-shadow:0px 0px 0px transparent;
+        min-height:10vh;
+        padding:0.5rem 1rem;
+        border-radius:0.7vw;
+    }
+    body header nav ul{
+        width:100%;
+    }
+    body header nav ul li a{
+        color:white;
+    }
+    body header nav ul li #drop-down{
+        color:white;
+    }
+    body header nav ul li .bi-chevron-down{
+        color:white;
+    }
+
+    body header nav .links{
+        width:100%;
+        align-items:center;
+        justify-content:center;
+    }
+    body header nav .links .bi-person-fill{
+        color:white;
+    }
+    body header nav .links .bi-moon-stars-fill{
+        color:white;
+    }
+    
+    body header nav ul li{
+        margin:0.5rem;
+    }
+}

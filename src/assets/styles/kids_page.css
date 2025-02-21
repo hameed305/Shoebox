@@ -1,0 +1,59 @@
+body main{
+    width: 90%;
+    margin: 1em auto;
+}
+body  #page_hero{
+    background:url("/Img/Products/Kids_bg.jpg");
+    height:95vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+    letter-spacing:0.1vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-attachment:fixed;
+    margin-bottom:2rem;
+}
+body  #page_hero div{
+    margin-left:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    min-height:60vh;
+}
+body #page_hero h1{
+    width:60%;
+    font-size:2.5rem;
+    font-weight:500;
+    color:black;
+}
+body #page_hero a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:1.2rem;
+    font-weight:500;
+    letter-spacing:0.2vw;
+    border:0.2vw solid rgb(0, 0, 0);
+    padding:0.8rem;
+    border-radius:5vw;
+    transition:all 0.5s linear;
+    width:20%;
+    text-align: center;
+}
+body #page_hero a:hover{
+    color:rgb(255, 255, 255);
+    background:rgb(0, 0, 0);
+}
+
+body main .ads_banner {
+    background: url("/Img/Products/banner.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45vh;
+    margin: 2vw 0vw;
+}
+
+

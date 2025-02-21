@@ -1,0 +1,10 @@
+body main{
+    width:90%;
+    margin:1rem auto;
+    min-height:80vh;
+    color:var(--black-color);
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    align-items:center;
+}

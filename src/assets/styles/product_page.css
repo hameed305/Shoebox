@@ -1,0 +1,149 @@
+body main {
+    display: flex;
+    justify-content: space-around;
+    gap: 1vw;
+    flex-wrap: wrap;
+    padding: 0.2vw;
+    margin: 1vw 0vw;
+    height: 100vh;
+    color: var(--black-color);
+    letter-spacing:0.1vw;
+}
+
+
+
+body main .box {
+    width: 45%;
+    padding: 0.2vw;
+    height: 80vh;
+    font-weight: 600;
+}
+
+body main .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+body main .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+body main .detail h1 {
+    padding: 0vw 1.1vw;
+    font-size:2rem;
+    color: rgba(176, 115, 255, 0.393);
+}
+
+body main .box .img_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(176, 115, 255, 0.393);
+    padding: 0.5vw;
+    border-radius: 1vw;
+}
+
+body main .box .img_box img{
+    border-radius:0.5vw;
+}
+
+body main .box .preview_box {
+    width: 75%;
+}
+
+.owl-carousel .owl-item img {
+    border-radius:1rem;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background:var(--black-color);
+    color:var(--white-color);
+    padding:0.5vw;
+    width:5%;
+}
+
+body main .detail .sub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 12%;
+    padding: 0vw 1vw;
+    gap: 3vw;
+    font-size: 1.1rem;
+}
+
+body main .detail .sub .sub_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5vw;
+    width: 20%;
+    box-shadow: 0vw 1vw 1vw rgba(0, 0, 0, 0.123);
+    border-radius: 0.3vw;
+}
+
+
+body main .detail .sub .sub_detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5vw;
+    width: 60%;
+    gap: 2vw;
+    box-shadow: 0vw 1vw 1vw rgba(0, 0, 0, 0.123);
+    border-radius: 0.3vw;
+}
+
+body main .detail .sub .sub_detail strike {
+    color: red;
+}
+
+body main .detail #brand,
+body main .detail .sub .sub_detail b {
+    color: white;
+    background: #9a26ff;
+    padding: 0.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3vw;
+    width: 30%;
+}
+
+body main .detail .sub .sub_detail b {
+    background: green;
+    border-radius: 0.2vw;
+    width: 50%;
+    font-size: 0.9rem;
+    padding: 0.3vw;
+}
+
+
+body main .detail .sub .sub_detail .color_1,
+body main .detail .sub .sub_detail .color_2,
+body main .detail .sub .sub_detail .color_3 {
+    padding: 1vw;
+    border-radius: 50%;
+    border: white 0.2vw solid;
+}
+
+
+body main .detail .sub .sub_detail .size_1,
+body main .detail .sub .sub_detail .size_2,
+body main .detail .sub .sub_detail .size_3,
+body main .detail .sub .sub_detail .size_4 {
+    width: 30px;
+    height: 30px;
+    background: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2vw;
+}

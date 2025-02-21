@@ -1,0 +1,24 @@
+
+
+body .promise_section .promise_box {
+    width:300px;
+    min-height:300px;
+    color: var(--black-color);
+}
+
+body .promise_section .promise_box img {
+    width:250px;
+}
+
+body .promise_section .promise_box h4 {
+    font-size: 1.2rem;
+    color: var(--black-color);
+    letter-spacing: 0.2vw;
+    padding-top:1rem;
+    text-align: center;
+}
+body .promise_section .promise_box p{
+    color:rgb(141, 141, 141);
+    text-wrap:wrap;
+}
+

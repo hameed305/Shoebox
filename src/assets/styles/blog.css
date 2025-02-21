@@ -1,0 +1,40 @@
+/* a is the box of blog_container */
+
+.blog_container a {
+    width:285px;
+    padding:1rem;
+    border-radius: 2vw;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    flex-direction:column;
+    border:2px solid transparent;
+    cursor:pointer;
+    text-decoration:none;
+    color:var(--black-color);
+}
+.blog_container a:hover{
+    background:var(--product-color);
+    scale:1.1;
+    transition:0.5s linear;
+    box-shadow:var(--shadow-color);
+}
+
+
+.blog_container a img{
+    width:250px;
+    border-radius:2vw;
+}
+.blog_container div{
+    display:flex;
+    gap:1rem;
+    margin-top:0.2rem;
+    color:rgb(141, 141, 141);
+}
+.blog_container a h1{
+    font-size:1rem;
+}
+.blog_container a p{
+    color:rgb(141, 141, 141);
+    font-size:0.8rem;
+}
