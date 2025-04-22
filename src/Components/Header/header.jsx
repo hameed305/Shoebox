@@ -94,7 +94,7 @@ const Header = () => {
       <nav id="menu-list">
 
         <div className="logo">
-          <img src="src/assets/Img/Png/text_logo.png" alt="Logo" id="logo" onClick={home_redirect} />
+          <img src="/text_logo.png" alt="Logo" id="logo" onClick={home_redirect} />
         </div>
 
         <ul>

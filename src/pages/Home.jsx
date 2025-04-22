@@ -4,7 +4,6 @@ import Promise_section from "../Components/Home/Promise_section/promise_section"
 import Store_card from "../Components/Home/store_card/store_card"
 import Article_Dream from "../Components/Home/New_dream_article_section/article"
 import Aside_section from "../Components/Home/aside_section/aside"
-import Home_blog from "../Components/Home/home_blog_section/home_blog"
 import H1_title from "../Components/h1_title"
 
 const Home = () => {
@@ -24,66 +23,66 @@ const Home = () => {
         <div className='store flex items-center justify-around flex-wrap gap-4 w-full p-4'>
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/1.png"
+            img_address="../../public/Img/Store/Products/1.png"
             brand_name="BLack Nike Shoe"
             price="40"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/2.png"
+            img_address="../../public/Img/Store/Products/2.png"
             brand_name="Blue Airmax"
             price="12"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/3.png"
+            img_address="../../public/Img/Store/Products/3.png"
             brand_name="Blue Sky Shoe"
             price="39"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/4.png"
+            img_address="../../public/Img/Store/Products/4.png"
             brand_name="Black White Shoe"
             price="45"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/5.png"
+            img_address="../../public/Img/Store/Products/5.png"
             brand_name="Dark Blue Shoe"
             price="50"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/6.png"
+            img_address="../../public/Img/Store/Products/6.png"
             brand_name="Black Red Dragon"
             price="35"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/7.png"
+            img_address="../../public/Img/Store/Products/7.png"
             brand_name="New Gray Shoe"
             price="13"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/8.png"
+            img_address="../../public/Img/Store/Products/8.png"
             brand_name="Blue Sea Shoe"
             price="15"
-            link="/product-page"
+            link="#"
           />
 
           <Store_card
-            img_address="/src/assets/Img/Store/Products/9.png"
+            img_address="../../public/Img/Store/Products/9.png"
             brand_name="Orange Shoe"
             price="43"
-            link="/product-page"
+            link="#"
           />
         </div>
 
@@ -105,14 +104,10 @@ const Home = () => {
 
       <Aside_section />
 
-      <H1_title title="OUR LATEST BLOGS" />
-
-      <Home_blog />
-
 
       <div className="footer_card">
 
-        <img src="src/assets/Img/Png/copan.png" alt="img" />
+        <img src="../../public/Img/Png/copan.png" alt="img" />
 
         <div className="footer_card_box">
 

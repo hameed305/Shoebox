@@ -12,7 +12,7 @@ import Blog from './pages/Blog'
 
 
 import "./App.css"
-import "./assets/styles/Bootstrap/bootstrap-icons.min.css"
+import "../public/styles/Bootstrap/bootstrap-icons.min.css"
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div className="container mx-auto">
 
-        <a href="https://www.whatsapp.com" className='fixed right-5 bottom-5 z-50 '>
+        <a href="#" className='fixed right-5 bottom-5 z-50 '>
           <span className='bi-whatsapp text-4xl p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] text-[var(--black-color)]'></span>
         </a>
 

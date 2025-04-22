@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import "../assets/styles/blog.css"
+import "../../public/styles/blog.css"
 import Blog_card from '../Components/blog_card'
 import Slider from '../Components/slider'
 const Blog = () => {
-  const [imagearrow,setarrow]=useState([
-    "../src/assets/Img/Blog/blog_1.jpg",
-    "../src/assets/Img/Blog/blog_2.jpg",
-    "../src/assets/Img/Blog/blog_3.jpeg",
-    "../src/assets/Img/Blog/blog_4.jpeg",
-    "../src/assets/Img/Blog/blog_5.jpeg",
+  const [imagearrow, setarrow] = useState([
+    "/Img/Blog/blog_1.jpg",
+    "/Img/Blog/blog_2.jpg",
+    "/Img/Blog/blog_3.jpeg",
+    "/Img/Blog/blog_4.jpeg",
+    "/Img/Blog/blog_5.jpeg",
   ])
   return (
     <>
-      <Slider images={imagearrow}/>
+      <Slider images={imagearrow} />
       <div className="main_container">
 
         {/* blog list has been started */}
@@ -22,123 +22,123 @@ const Blog = () => {
         <div className="blog_container flex items-center justify-around flex-wrap gap-8 w-full my-8 p-2">
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_1.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_1.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_2.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_2.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_3.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_3.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_4.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_4.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_5.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_5.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_6.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_6.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_7.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_7.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_8.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_8.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_9.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_9.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_10.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_10.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_11.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_11.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_12.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_12.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_13.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_13.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_14.jpeg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_14.jpeg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
           <Blog_card
-          img="../src/assets/Img/Blog/blog_15.jpg"
-          date="2 oct 2023"
-          read_time="2 hour read"
-          title="New arrivals in the new city"
-          detail="Lorem is the best thing int lkjalkds"
+            img="../../public/Img/Blog/blog_15.jpg"
+            date="2 oct 2023"
+            read_time="2 hour read"
+            title="New arrivals in the new city"
+            detail="Lorem is the best thing int lkjalkds"
           />
 
 

@@ -4,18 +4,18 @@ import "./aside.css"
 const aside = () => {
   return (
     <aside>
-    <div className="aside-box">
+      <div className="aside-box">
         <span id="colored_title">Save</span>
-        <p>With new hot deal<br/>offer</p>
+        <p>With new hot deal<br />offer</p>
         <div className="new_price">
-            <strike id="strike">$100</strike>
-            <p>$80</p>
+          <strike id="strike">$100</strike>
+          <p>$80</p>
         </div>
         <a href="#">CHECK OUT</a>
-    </div>
-    <div className="aside_circle"></div>
-    <img src="src/assets/Img/Store/aside_section_img.png" alt="img"/>
-</aside>
+      </div>
+      <div className="aside_circle"></div>
+      <img src="../../public/Img/Store/aside_section_img.png" alt="img" />
+    </aside>
 
 
   )

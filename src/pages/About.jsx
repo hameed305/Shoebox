@@ -1,5 +1,5 @@
 import React from 'react'
-import "../assets/styles/about.css"
+import "../../public/styles/about.css"
 const About = () => {
   return (
     <>
@@ -66,13 +66,13 @@ const About = () => {
           <p>THE OWNER</p>
           <div class="media_container">
             <a href="">
-              <img src="../src/assets/Img/Png/Facebook.png" alt="facebook" />
+              <img src="/Img/Png/Facebook.png" alt="facebook" />
             </a>
             <a href="">
-              <img src="../src/assets/Img/Png/Instagram.png" alt="Instagram" />
+              <img src="/Img/Png/Instagram.png" alt="Instagram" />
             </a>
             <a href="">
-              <img src="../src/assets/Img/Png/Whatsapp.png" alt="whatsapp" />
+              <img src="/Img/Png/Whatsapp.png" alt="whatsapp" />
             </a>
           </div>
         </div>
@@ -107,9 +107,9 @@ const About = () => {
           As an Amazon affiliate, I earn a commission for each purchase made through my affiliate links. But don't worry – my goal is to provide you with the most valuable information, not to push you into buying something you don't need.
 
           <div class="flex items-center justify-center gap-4 flex-wrap">
-            <img width={300} className='rounded-lg' src="../src/assets/Img/Blog/blog_1.jpg" alt="nike" />
-            <img width={300} className='rounded-lg' src="../src/assets/Img/Blog/blog_2.jpg" alt="addidas" />
-            <img width={300} className='rounded-lg' src="../src/assets/Img/Blog/blog_3.jpeg" alt="airmax" />
+            <img width={300} className='rounded-lg' src="../../public/Img/Blog/blog_1.jpg" alt="nike" />
+            <img width={300} className='rounded-lg' src="../../public/Img/Blog/blog_2.jpg" alt="addidas" />
+            <img width={300} className='rounded-lg' src="../../public/Img/Blog/blog_3.jpeg" alt="airmax" />
           </div>
 
           On this website, you'll find in-depth product reviews, roundups, and comparisons to help you navigate the vast online marketplace. Whether you're looking for tech gadgets, home goods, or outdoor gear, I've got you covered.

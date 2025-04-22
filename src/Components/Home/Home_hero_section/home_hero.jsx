@@ -23,7 +23,7 @@ export const home_hero = () => {
         </div>
       </div>
 
-      <img src="/src/assets/Img/Store/hero_img.png" alt="img" />
+      <img src="../../public/Img/Store/hero_img.png" alt="img" />
 
     </div>
 
