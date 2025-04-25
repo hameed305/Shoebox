@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home_hero.css"
-
+import Heroimg from '../../../Assets/Img/Store/hero_img.png';
 export const home_hero = () => {
   return (
 
@@ -23,7 +23,7 @@ export const home_hero = () => {
         </div>
       </div>
 
-      <img src="../../public/Img/Store/hero_img.png" alt="img" />
+      <img src={Heroimg} alt="img" />
 
     </div>
 

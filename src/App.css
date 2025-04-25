@@ -97,7 +97,7 @@ body main {
 /* hero-2 has started */
 
 .hero_2 {
-  background-image: url("../../public/Img/Store/hero_2_bg.png");
+  background-image: url("/hero_2_bg.png");
 }
 
 /* footer card styling */

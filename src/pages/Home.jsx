@@ -5,7 +5,8 @@ import Store_card from "../Components/Home/store_card/store_card"
 import Article_Dream from "../Components/Home/New_dream_article_section/article"
 import Aside_section from "../Components/Home/aside_section/aside"
 import H1_title from "../Components/h1_title"
-
+import Token_img from "../Assets/Img/Png/copan.png"
+import Store from "../Data/Store.json"
 const Home = () => {
   return (
     <>
@@ -21,69 +22,19 @@ const Home = () => {
       <section className='w-full'>
 
         <div className='store flex items-center justify-around flex-wrap gap-4 w-full p-4'>
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/1.png"
-            brand_name="BLack Nike Shoe"
-            price="40"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/2.png"
-            brand_name="Blue Airmax"
-            price="12"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/3.png"
-            brand_name="Blue Sky Shoe"
-            price="39"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/4.png"
-            brand_name="Black White Shoe"
-            price="45"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/5.png"
-            brand_name="Dark Blue Shoe"
-            price="50"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/6.png"
-            brand_name="Black Red Dragon"
-            price="35"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/7.png"
-            brand_name="New Gray Shoe"
-            price="13"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/8.png"
-            brand_name="Blue Sea Shoe"
-            price="15"
-            link="#"
-          />
-
-          <Store_card
-            img_address="../../public/Img/Store/Products/9.png"
-            brand_name="Orange Shoe"
-            price="43"
-            link="#"
-          />
+          {
+            Store.map((s, index) => {
+              return (
+                <Store_card
+                  key={index}
+                  img_address={s.img_address}
+                  brand_name={s.brand_name}
+                  price={s.price}
+                  link={s.link}
+                />
+              )
+            })
+          }
         </div>
 
       </section>
@@ -107,8 +58,7 @@ const Home = () => {
 
       <div className="footer_card">
 
-        <img src="../../public/Img/Png/copan.png" alt="img" />
-
+        <img src={Token_img} alt="img" />
         <div className="footer_card_box">
 
           <h1>Use the copan code</h1>

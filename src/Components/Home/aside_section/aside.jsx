@@ -1,6 +1,6 @@
 import React from 'react'
 import "./aside.css"
-
+import asideImage from '../../../Assets/Img/Store/aside_section_img.png';
 const aside = () => {
   return (
     <aside>
@@ -14,10 +14,8 @@ const aside = () => {
         <a href="#">CHECK OUT</a>
       </div>
       <div className="aside_circle"></div>
-      <img src="../../public/Img/Store/aside_section_img.png" alt="img" />
+      <img src={asideImage} alt="img" />
     </aside>
-
-
   )
 }
 

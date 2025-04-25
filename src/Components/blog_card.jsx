@@ -1,8 +1,8 @@
 import React from 'react'
 
-const blog_card = (props) => {
+const blog_card = (props, key) => {
     return (
-        <a href="/blog">
+        <a href="/blog" key={key}>
             <img src={props.img} alt="img" />
             <div><span>{props.date}</span> <span>{props.read_time}</span></div>
             <h1>{props.title}</h1>

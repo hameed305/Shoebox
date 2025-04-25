@@ -140,7 +140,7 @@ body .about_hero .logo_container img {
 }
 
 .about_container .img .img_box {
-  background: url("../../public/Img/Png/About_Profile_image.JPG");
+  background: url("/About_Profile_image.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
