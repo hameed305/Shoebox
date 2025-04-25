@@ -1,8 +1,8 @@
-import React from 'react'
-import "./promise_section.css"
-import Deliverytruck from '../../../Assets/Img/Png/truck delivery.png';
-import Payment from '../../../Assets/Img/Png/secure payment.png';
-import Offer from '../../../Assets/Img/Png/offer.png';
+import React from "react";
+import "./promise_section.css";
+import Deliverytruck from "/Assets/Img/Png/truck delivery.png";
+import Payment from "/Assets/Img/Png/secure payment.png";
+import Offer from "/Assets/Img/Png/offer.png";
 
 const promise_section = () => {
   return (
@@ -23,8 +23,7 @@ const promise_section = () => {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possims</p>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default promise_section
+export default promise_section;

@@ -1,12 +1,16 @@
-import React from 'react'
-import "./aside.css"
-import asideImage from '../../../Assets/Img/Store/aside_section_img.png';
+import React from "react";
+import "./aside.css";
+import asideImage from "/Assets/Img/Store/aside_section_img.png";
 const aside = () => {
   return (
     <aside>
       <div className="aside-box">
         <span id="colored_title">Save</span>
-        <p>With new hot deal<br />offer</p>
+        <p>
+          With new hot deal
+          <br />
+          offer
+        </p>
         <div className="new_price">
           <strike id="strike">$100</strike>
           <p>$80</p>
@@ -16,7 +20,7 @@ const aside = () => {
       <div className="aside_circle"></div>
       <img src={asideImage} alt="img" />
     </aside>
-  )
-}
+  );
+};
 
-export default aside
+export default aside;

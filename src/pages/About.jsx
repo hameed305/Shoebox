@@ -1,14 +1,20 @@
-import React from 'react'
-import "../../public/styles/about.css"
-import blog_img_1 from "../Assets/Img/Blog/blog_1.jpg"
-import blog_img_2 from "../Assets/Img/Blog/blog_2.jpg"
-import blog_img_3 from "../Assets/Img/Blog/blog_3.jpeg"
+import React from "react";
+import "../../public/styles/about.css";
+import blog_img_1 from "/Assets/Img/Blog/blog_1.jpg";
+import blog_img_2 from "/Assets/Img/Blog/blog_2.jpg";
+import blog_img_3 from "/Assets/Img/Blog/blog_3.jpeg";
 const About = () => {
   return (
     <>
       <div className="about_hero flex flex-col items-center justify-center text-white gap-8">
         <h1>ABOUT US</h1>
-        <p>SHOEBOX.COM is an ecommerce online shop<br />Developed by <span className='bg-violet-500 p-1 rounded-lg border border-violet-400'>Naeem Khan</span>
+        <p>
+          SHOEBOX.COM is an ecommerce online shop
+          <br />
+          Developed by{" "}
+          <span className="bg-violet-500 p-1 rounded-lg border border-violet-400">
+            Naeem Khan
+          </span>
         </p>
         <div class="logo_container">
           <img src="/logo.png" alt="logo" />
@@ -16,9 +22,7 @@ const About = () => {
         </div>
       </div>
 
-
-      <div className='about_container'>
-
+      <div className="about_container">
         <div class="details">
           <h1 class="title">ABOUT ME</h1>
           <p>NAME : Naeem khan</p>
@@ -28,7 +32,6 @@ const About = () => {
           <h2>COMPUTER SKILLS :</h2>
 
           <div class="courses">
-
             <div class="c_box">
               <span>WEB DESIGNING</span>
               <div>
@@ -57,67 +60,97 @@ const About = () => {
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="img">
-
-          <div class="img_box">
-            {/* image has been set in bg  */}
-          </div>
+          <div class="img_box">{/* image has been set in bg  */}</div>
           <h3>Naeem Khan</h3>
           <p>THE OWNER</p>
           <div class="media_container">
-            <span onClick={(function () { location.href = "https://www.facebook.com" })} className="bi-facebook cursor-pointer text-blue-500"></span>
-            <span onClick={(function () { location.href = "https://www.instagram.com" })} className="bi-instagram cursor-pointer text-purple-500"></span>
-            <span onClick={(function () { location.href = "https://www.whatsapp.com" })} className="bi-whatsapp cursor-pointer text-green-500"></span>
+            <span
+              onClick={function () {
+                location.href = "https://www.facebook.com";
+              }}
+              className="bi-facebook cursor-pointer text-blue-500"
+            ></span>
+            <span
+              onClick={function () {
+                location.href = "https://www.instagram.com";
+              }}
+              className="bi-instagram cursor-pointer text-purple-500"
+            ></span>
+            <span
+              onClick={function () {
+                location.href = "https://www.whatsapp.com";
+              }}
+              className="bi-whatsapp cursor-pointer text-green-500"
+            ></span>
           </div>
         </div>
-
       </div>
 
-
-      <div className='.about_section'>
-
+      <div className=".about_section">
         <h1 class="title">ABOUT SHOEBOX.COM</h1>
-        <pre>"Welcome to SHOEBOX.COM, your trusted source for product recommendations and reviews! I'm HAMEED JAN, a passionate online marketer and affiliate marketer with a mission to help you find the best products for your needs.
-
-          With years of experience in the online marketing space, I've learned what makes a product stand out from the crowd. I've scoured the web to bring you the most comprehensive and unbiased reviews, so you can make informed purchasing decisions.
-
-          As an Amazon affiliate, I earn a commission for each purchase made through my affiliate links. But don't worry – my goal is to provide you with the most valuable information, not to push you into buying something you don't need.
-
-          On this website, you'll find in-depth product reviews, roundups, and comparisons to help you navigate the vast online marketplace. Whether you're looking for tech gadgets, home goods, or outdoor gear, I've got you covered.
-
-          Thanks for your shopping journey.
+        <pre>
+          "Welcome to SHOEBOX.COM, your trusted source for product
+          recommendations and reviews! I'm HAMEED JAN, a passionate online
+          marketer and affiliate marketer with a mission to help you find the
+          best products for your needs. With years of experience in the online
+          marketing space, I've learned what makes a product stand out from the
+          crowd. I've scoured the web to bring you the most comprehensive and
+          unbiased reviews, so you can make informed purchasing decisions. As an
+          Amazon affiliate, I earn a commission for each purchase made through
+          my affiliate links. But don't worry – my goal is to provide you with
+          the most valuable information, not to push you into buying something
+          you don't need. On this website, you'll find in-depth product reviews,
+          roundups, and comparisons to help you navigate the vast online
+          marketplace. Whether you're looking for tech gadgets, home goods, or
+          outdoor gear, I've got you covered. Thanks for your shopping journey.
         </pre>
       </div>
-
 
       <div class=".about_shop">
-        <h1 class="title">
-          LET'S DO THE SHOPPING
-        </h1>
-        <pre>"Welcome to SHOEBOX.COM, your trusted source for product recommendations and reviews! I'm HAMEED JAN, a passionate online marketer and affiliate marketer with a mission to help you find the best products for your needs.
-
-          With years of experience in the online marketing space, I've learned what makes a product stand out from the crowd. I've scoured the web to bring you the most comprehensive and unbiased reviews, so you can make informed purchasing decisions.
-
-          As an Amazon affiliate, I earn a commission for each purchase made through my affiliate links. But don't worry – my goal is to provide you with the most valuable information, not to push you into buying something you don't need.
-
+        <h1 class="title">LET'S DO THE SHOPPING</h1>
+        <pre>
+          "Welcome to SHOEBOX.COM, your trusted source for product
+          recommendations and reviews! I'm HAMEED JAN, a passionate online
+          marketer and affiliate marketer with a mission to help you find the
+          best products for your needs. With years of experience in the online
+          marketing space, I've learned what makes a product stand out from the
+          crowd. I've scoured the web to bring you the most comprehensive and
+          unbiased reviews, so you can make informed purchasing decisions. As an
+          Amazon affiliate, I earn a commission for each purchase made through
+          my affiliate links. But don't worry – my goal is to provide you with
+          the most valuable information, not to push you into buying something
+          you don't need.
           <div class="flex items-center justify-center gap-4 flex-wrap">
-            <img width={300} className='rounded-lg' src={blog_img_1} alt="nike" />
-            <img width={300} className='rounded-lg' src={blog_img_2} alt="addidas" />
-            <img width={300} className='rounded-lg' src={blog_img_3} alt="airmax" />
+            <img
+              width={300}
+              className="rounded-lg"
+              src={blog_img_1}
+              alt="nike"
+            />
+            <img
+              width={300}
+              className="rounded-lg"
+              src={blog_img_2}
+              alt="addidas"
+            />
+            <img
+              width={300}
+              className="rounded-lg"
+              src={blog_img_3}
+              alt="airmax"
+            />
           </div>
-
-          On this website, you'll find in-depth product reviews, roundups, and comparisons to help you navigate the vast online marketplace. Whether you're looking for tech gadgets, home goods, or outdoor gear, I've got you covered.
-
-          Thanks for your shopping journey.
+          On this website, you'll find in-depth product reviews, roundups, and
+          comparisons to help you navigate the vast online marketplace. Whether
+          you're looking for tech gadgets, home goods, or outdoor gear, I've got
+          you covered. Thanks for your shopping journey.
         </pre>
       </div>
-
-
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

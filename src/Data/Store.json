@@ -1,55 +1,55 @@
 [
   {
-    "img_address": "./src/Assets/Img/Store/Products/1.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/1.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/2.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/2.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/3.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/3.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/4.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/4.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/5.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/5.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/6.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/6.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/7.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/7.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/8.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/8.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   },
   {
-    "img_address": "./src/Assets/Img/Store/Products/9.png",
-    "brand_name": " Nike",
+    "img_address": "/Assets/Img/Store/Products/9.png",
+    "brand_name": "Nike",
     "price": "40",
     "link": "#"
   }

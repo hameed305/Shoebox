@@ -1,104 +1,104 @@
 [
   {
-    "img": "./src/Assets/Img/Blog/blog_1.jpg",
+    "img": "/Assets/Img/Blog/blog_1.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_2.jpg",
+    "img": "/Assets/Img/Blog/blog_2.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_3.jpeg",
+    "img": "/Assets/Img/Blog/blog_3.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_4.jpeg",
+    "img": "/Assets/Img/Blog/blog_4.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_5.jpeg",
+    "img": "/Assets/Img/Blog/blog_5.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_6.jpeg",
+    "img": "/Assets/Img/Blog/blog_6.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_7.jpeg",
+    "img": "/Assets/Img/Blog/blog_7.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_8.jpg",
+    "img": "/Assets/Img/Blog/blog_8.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_9.jpg",
+    "img": "/Assets/Img/Blog/blog_9.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_10.jpeg",
+    "img": "/Assets/Img/Blog/blog_10.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_11.jpg",
+    "img": "/Assets/Img/Blog/blog_11.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_12.jpg",
+    "img": "/Assets/Img/Blog/blog_12.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_13.jpeg",
+    "img": "/Assets/Img/Blog/blog_13.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_14.jpeg",
+    "img": "/Assets/Img/Blog/blog_14.jpeg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",
     "details": "Lorem is the best details for every thing"
   },
   {
-    "img": "./src/Assets/Img/Blog/blog_15.jpg",
+    "img": "/Assets/Img/Blog/blog_15.jpg",
     "date": "2 oct 2023",
     "read_time": "2 hour read",
     "title": "New arrivals in new city ",

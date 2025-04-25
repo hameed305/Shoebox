@@ -1,9 +1,11 @@
+/* Sticky Header */
 body header {
   position: sticky;
   top: 0px;
   z-index: 9999;
 }
 
+/* Navbar base styles */
 body header nav {
   display: flex;
   align-items: center;
@@ -14,6 +16,7 @@ body header nav {
   backdrop-filter: blur(1.5vw);
 }
 
+/* Nav UL and LI */
 header nav ul {
   position: relative;
   width: 60%;
@@ -38,16 +41,16 @@ header nav ul li {
   position: relative;
 }
 
+/* Nav links */
 header nav ul li a {
   color: var(--black-color);
   text-decoration: none;
-  position: relative;
   font-size: 0.8em;
   font-weight: 500;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
   transition: 0.1s linear;
   border-radius: 0.4vw;
   border: 0.1vw solid transparent;
@@ -59,11 +62,14 @@ header nav ul li a:hover {
   box-shadow: 0vw 0.6vw 1vw rgba(0, 0, 0, 0.139);
   border: 0.1vw solid rgba(255, 255, 255, 0.39);
 }
+
 .navbar_active {
   color: white;
   background: var(--navbar-link);
   border: 0.1vw solid rgba(255, 255, 255, 0.39);
 }
+
+/* Text links (if any) */
 header nav ul li p {
   color: var(--black-color);
   font-size: 0.8rem;
@@ -72,37 +78,44 @@ header nav ul li p {
   display: flex;
   align-items: center;
 }
-/* home and contact icon property */
 
+/* Icons (theme, contact) */
 header nav span {
   font-size: 1rem;
   cursor: pointer;
   color: var(--black-color);
-  padding: 0.1vw 0.5rem;
+  padding: 0.4rem;
   border-radius: 0.2vw;
   display: flex;
   align-items: center;
-  padding: 0.4rem;
   justify-content: center;
 }
+
 header nav span:hover {
   background: var(--light-them);
   box-shadow: 0vw 0.6vw 1vw rgba(0, 0, 0, 0.155);
   color: white;
 }
+
 header nav .bi-sun-fill:hover {
   transform: rotate(360deg);
   transition: transform 1s linear;
 }
 
-/* navbar logo */
-
+/* Logo and Right Icons */
 header .logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 15%;
 }
+
+header .logo #logo {
+  width: 60.5px;
+  cursor: pointer;
+  margin-left: 1.2rem;
+}
+
 header .links {
   width: 15%;
   padding-right: 1rem;
@@ -112,14 +125,8 @@ header .links {
   flex-wrap: wrap;
   gap: 2rem;
 }
-header .logo #logo {
-  width: 60.5px;
-  cursor: pointer;
-  margin-left: 1.2rem;
-}
 
-/* mobile menubar */
-
+/* Mobile Menu Icon */
 .mobile_menu_box {
   width: 35px;
   height: 35px;
@@ -133,18 +140,68 @@ header .logo #logo {
   font-size: 1.4rem;
 }
 
-/* toggle class of js to show the toggle button*/
-
+/* Show mobile menu toggle */
 .show_mobilemenu {
   display: block;
 }
 
-/* Responsive styling codes for the mobile menu navbar */
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
 
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 500;
+  color: var(--black-color);
+  transition: 0.2s;
+}
+
+.dropdown-toggle:hover {
+  background: var(--light-them);
+  color: white;
+  border-radius: 0.4vw;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 0.3rem;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem 0.8rem;
+  display: block;
+  transition: background 0.2s;
+  border-radius: 0.3rem;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 1024px) {
   .mobile_menu_box {
     display: flex;
   }
+
   #logo {
     display: none;
   }
@@ -165,9 +222,11 @@ header .logo #logo {
     padding: 0.5rem 1rem;
     border-radius: 0.7vw;
   }
+
   body header nav ul {
     width: 100%;
   }
+
   body header nav ul li a {
     color: white;
   }
@@ -177,14 +236,28 @@ header .logo #logo {
     align-items: center;
     justify-content: center;
   }
-  body header nav .links .bi-person-fill {
-    color: white;
-  }
+
+  body header nav .links .bi-person-fill,
   body header nav .links .bi-moon-stars-fill {
     color: white;
   }
 
   body header nav ul li {
     margin: 0.5rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .dropdown-menu li a {
+    color: white;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }

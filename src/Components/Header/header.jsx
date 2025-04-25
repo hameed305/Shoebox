@@ -1,84 +1,78 @@
 "use client";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./navbar.css";
-import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [pro, setpro] = useState(false);
-  let mobile_menu = useRef();
+  const mobileMenuIcon = useRef();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  // function for mobile menu bar
-
-  function mobile_menu_bar() {
+  // Toggle mobile menu
+  function handleMobileMenu() {
     document.querySelector("#menu-list").classList.toggle("show_mobilemenu");
-    mobile_menu.current.classList.toggle("bi-x-circle-fill");
+    mobileMenuIcon.current.classList.toggle("bi-x-circle-fill");
   }
 
-  // function for home redirect on logo clicking
-
-  function home_redirect() {
-    location = "/";
+  // Redirect to home
+  function handleHomeRedirect() {
+    navigate("/");
   }
 
-  // function for changing theme
+  // Redirect to contact
+  function handleContactRedirect() {
+    navigate("/contact");
+  }
 
-  function change_them() {
-    let darkmode = document.querySelector(".bi-moon-stars-fill");
+  // Toggle dark/light theme
+  function handleThemeToggle() {
+    const icon = document.querySelector(".bi-moon-stars-fill");
     document.body.style.transition = "all 0.1s linear";
     document.body.classList.toggle("dark_them");
-    let them;
 
+    let theme;
     if (document.body.classList.contains("dark_them")) {
-      darkmode.classList.add("bi-sun-fill");
-      them = "dark";
+      icon.classList.add("bi-sun-fill");
+      theme = "dark";
     } else {
-      darkmode.classList.remove("bi-sun-fill");
-      them = "light";
+      icon.classList.remove("bi-sun-fill");
+      theme = "light";
     }
 
-    localStorage.setItem("mode", them); // Save the theme to localStorage
+    localStorage.setItem("mode", theme);
   }
 
-  // Apply the saved theme on page load
-  React.useEffect(() => {
+  // Apply saved theme on mount
+  useEffect(() => {
     const savedTheme = localStorage.getItem("mode");
     if (savedTheme === "dark") {
       document.body.classList.add("dark_them");
       document
         .querySelector(".bi-moon-stars-fill")
-        .classList.add("bi-sun-fill");
+        ?.classList.add("bi-sun-fill");
     }
   }, []);
 
-  // function contact page redirect
+  // Remove mobile menu on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      document.getElementById("menu-list")?.classList.remove("show_mobilemenu");
+      mobileMenuIcon.current?.classList.remove("bi-x-circle-fill");
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  function contact_redirect() {
-    location = "/contact";
+  // Toggle dropdown
+  function toggleDropdown() {
+    setDropdownOpen((prev) => !prev);
   }
-
-  // navbar active links
-
-  let navbar_links = document.querySelectorAll("#menu-list .navlinks");
-  let windowpath = window.location.pathname;
-  navbar_links.forEach((a) => {
-    let navbar_links_path = new URL(a.to).pathname;
-    if (windowpath === navbar_links_path) {
-      a.classList.add("navbar_active");
-    }
-  });
-
-  // function for the scrolling windows
-
-  window.onscroll = () => {
-    document.getElementById("menu-list").classList.remove("show_mobilemenu");
-    mobile_menu.current.classList.remove("bi-x-circle-fill");
-  };
 
   return (
     <header>
-      <div className="mobile_menu_box" onClick={mobile_menu_bar}>
-        <span className="bi-list" ref={mobile_menu}></span>
+      <div className="mobile_menu_box" onClick={handleMobileMenu}>
+        <span className="bi-list" ref={mobileMenuIcon}></span>
       </div>
 
       <nav id="menu-list">
@@ -87,7 +81,7 @@ const Header = () => {
             src="/text_logo.png"
             alt="Logo"
             id="logo"
-            onClick={home_redirect}
+            onClick={handleHomeRedirect}
           />
         </div>
 
@@ -95,8 +89,10 @@ const Header = () => {
           <li>
             <Link
               to="/"
-              aria-label="Read about our website"
-              className="navlinks"
+              className={`navlinks ${
+                location.pathname === "/" ? "navbar_active" : ""
+              }`}
+              aria-label="Home"
             >
               HOME
             </Link>
@@ -104,8 +100,10 @@ const Header = () => {
           <li>
             <Link
               to="/about"
-              aria-label="Read about our website"
-              className="navlinks"
+              className={`navlinks ${
+                location.pathname === "/about" ? "navbar_active" : ""
+              }`}
+              aria-label="About"
             >
               ABOUT
             </Link>
@@ -113,24 +111,58 @@ const Header = () => {
           <li>
             <Link
               to="/blog"
-              aria-label="Read about our website"
-              className="navlinks"
+              className={`navlinks ${
+                location.pathname === "/blog" ? "navbar_active" : ""
+              }`}
+              aria-label="Blog"
             >
               BLOG
             </Link>
           </li>
-          <li onClick={() => setpro(!pro)}>
-            <Link to="#" className="navlinks">
-              Products
-              <span className="bi-chevron-down"></span>
-            </Link>
+          <li className="dropdown">
+            <span
+              onClick={toggleDropdown}
+              className="dropdown-toggle"
+              aria-label="More"
+            >
+              MORE
+            </span>
+            {dropdownOpen && (
+              <ul className="dropdown-menu">
+                <li>
+                  <Link
+                    to="#"
+                    className={`navlinks ${
+                      location.pathname === "/services" ? "navbar_active" : ""
+                    }`}
+                  >
+                    Link 1
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#"
+                    className={`navlinks ${
+                      location.pathname === "/portfolio" ? "navbar_active" : ""
+                    }`}
+                  >
+                    Link 2
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          {pro ? <i>nigar</i> : ""}
         </ul>
 
         <div className="links">
-          <span className="bi-person-fill" onClick={contact_redirect}></span>
-          <span className="bi-moon-stars-fill" onClick={change_them}></span>
+          <span
+            className="bi-person-fill"
+            onClick={handleContactRedirect}
+          ></span>
+          <span
+            className="bi-moon-stars-fill"
+            onClick={handleThemeToggle}
+          ></span>
         </div>
       </nav>
     </header>
